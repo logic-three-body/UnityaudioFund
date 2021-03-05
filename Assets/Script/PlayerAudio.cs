@@ -16,6 +16,9 @@ public class PlayerAudio : MonoBehaviour {
     }
     private void OnTriggerExit(Collider other)
     {
-
+        if (other.CompareTag("Water"))
+        {
+            audioS.PlayOneShot(bumpSound);
+        }
     }
 }
