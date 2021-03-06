@@ -39,7 +39,7 @@ AudioMixerGroupController:
   m_Pitch: 94bd4abd7178cb44b88534b768e7befd
   m_Effects:
   - {fileID: 24400004}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 1
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
