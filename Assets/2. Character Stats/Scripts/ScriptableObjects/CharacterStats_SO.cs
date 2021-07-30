@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewStats", menuName = "Character/Stats", order = 1)]
@@ -194,7 +196,7 @@ public class CharacterStats_SO : ScriptableObject
                 break;
             case ItemArmorSubType.Chest:
                 if (chestArmor != null)
-                { 
+                {
                     if (chestArmor == armorPickUp)
                     {
                         previousArmorSame = true;
@@ -259,7 +261,7 @@ public class CharacterStats_SO : ScriptableObject
         charLevel += 1;
         //Display Level Up Visualization
 
-        maxHealth = charLevelUps[charLevel -1].maxHealth;
+        maxHealth = charLevelUps[charLevel - 1].maxHealth;
         maxMana = charLevelUps[charLevel - 1].maxMana;
         maxWealth = charLevelUps[charLevel - 1].maxWealth;
         baseDamage = charLevelUps[charLevel - 1].baseDamage;
@@ -272,7 +274,9 @@ public class CharacterStats_SO : ScriptableObject
     public void saveCharacterData()
     {
         saveDataOnClose = true;
+#if UNITY_EDITOR
         EditorUtility.SetDirty(this);
+#endif
     }
     #endregion
 }
