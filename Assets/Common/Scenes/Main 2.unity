@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: e7dc5492525d76e46801cd4563aec875
+  m_OcclusionCullingData: {fileID: 36300000, guid: d7dd88cd7ecc1a5418655377369ee926,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -1480,7 +1481,7 @@ Prefab:
     - target: {fileID: 108426595800782506, guid: 5bd2b2494c0eed644a664c81e91b3a5f,
         type: 2}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 215762311204214222, guid: 5bd2b2494c0eed644a664c81e91b3a5f,
         type: 2}
@@ -1717,7 +1718,7 @@ Prefab:
     - target: {fileID: 108621120286759368, guid: 5bd2b2494c0eed644a664c81e91b3a5f,
         type: 2}
       propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4443181003839452, guid: 5bd2b2494c0eed644a664c81e91b3a5f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3371,6 +3372,15 @@ Prefab:
     - target: {fileID: 1947026212471452, guid: 5bd2b2494c0eed644a664c81e91b3a5f, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 108426595800782506, guid: 5bd2b2494c0eed644a664c81e91b3a5f,
+        type: 2}
+      propertyPath: m_Shadows.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820654503648352, guid: 5bd2b2494c0eed644a664c81e91b3a5f, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 86
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bd2b2494c0eed644a664c81e91b3a5f, type: 2}
